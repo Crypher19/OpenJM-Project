@@ -58,14 +58,14 @@ public class RegistrationActivity extends Activity {
 					dc.setUtente(u);
 					dc.setScelta("R");
 					
-					/*ThreadSocket ts = new ThreadSocket(dc);
+					ThreadSocket ts = new ThreadSocket(dc);
 					ts.start();
 					try {
 						ts.join();
 					} catch (InterruptedException e) {
 						// TODO Auto-generated catch block
 						e.printStackTrace();
-					}*/
+					}
 				}
 						
 					/*if (dc.isAutenticato()) {
