@@ -66,6 +66,7 @@ public class MainActivity extends Activity {
 					
 					// lo salvo in dati condivisi
 					dc.setUtente(u);
+					dc.setScelta("A");
 					
 					ThreadSocket ts = new ThreadSocket(dc);
 					ts.start();
@@ -111,6 +112,9 @@ public class MainActivity extends Activity {
 			@Override
 			public void onClick(View v) {
 				// TODO Auto-generated method stub
+				// passo i dati condivisi attraverso l'uso di Parcelable
+				intentRegistrationActivity.putExtra("DatiCondivisi", dc);
+				
 				// faccio partire la nuova activity
 				startActivity(intentRegistrationActivity);
 			}

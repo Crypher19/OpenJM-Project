@@ -38,9 +38,18 @@ public class ThreadSocket extends Thread {
 			sIN = new BufferedReader(in);
 			
 		
-			// creo il messaggio
-			msgDaInviare = "A;" + dc.getUtente().getUser() + ";";
-			msgDaInviare += dc.getUtente().getPass();
+			if ("A".equals(dc.getScelta())) {
+				msgDaInviare = "A;" + dc.getUtente().getUser() + ";";
+				msgDaInviare += dc.getUtente().getPass();
+			}
+			else if ("R".equals(dc.getScelta())) {
+				msgDaInviare = "R;" + dc.getUtente().getUser() + ";";
+				msgDaInviare += dc.getUtente().getPass();
+				msgDaInviare += dc.getUtente().getName();
+				msgDaInviare += dc.getUtente().getSurn();
+				msgDaInviare += dc.getUtente().getMail();
+			}
+			
 
 			// invio il messaggio
 			sOUT.println(msgDaInviare);

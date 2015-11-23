@@ -1,10 +1,14 @@
 package com.ismonnet.openjm;
 
-public class DatiCondivisi {
+import android.os.Parcel;
+import android.os.Parcelable;
+
+public class DatiCondivisi implements Parcelable {
 	private Utente utente;
 	private String serverAddress;
 	private int serverPort;
 	private boolean autenticato;
+	private String scelta;
 
 	
 	public DatiCondivisi() {
@@ -45,4 +49,46 @@ public class DatiCondivisi {
 	public void setAutenticato(boolean autenticato) {
 		this.autenticato = autenticato;
 	}
+
+	public String getScelta() {
+		return scelta;
+	}
+
+	public void setScelta(String scelta) {
+		this.scelta = scelta;
+	}
+
+    protected DatiCondivisi(Parcel in) {
+        utente = (Utente) in.readValue(Utente.class.getClassLoader());
+        serverAddress = in.readString();
+        serverPort = in.readInt();
+        autenticato = in.readByte() != 0x00;
+        scelta = in.readString();
+    }
+
+    @Override
+    public int describeContents() {
+        return 0;
+    }
+
+    @Override
+    public void writeToParcel(Parcel dest, int flags) {
+        dest.writeValue(utente);
+        dest.writeString(serverAddress);
+        dest.writeInt(serverPort);
+        dest.writeByte((byte) (autenticato ? 0x01 : 0x00));
+        dest.writeString(scelta);
+    }
+
+    public static final Parcelable.Creator<DatiCondivisi> CREATOR = new Parcelable.Creator<DatiCondivisi>() {
+        @Override
+        public DatiCondivisi createFromParcel(Parcel in) {
+            return new DatiCondivisi(in);
+        }
+
+        @Override
+        public DatiCondivisi[] newArray(int size) {
+            return new DatiCondivisi[size];
+        }
+    };
 }
