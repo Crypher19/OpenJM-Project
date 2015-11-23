@@ -33,7 +33,7 @@ public class RegistrationActivity extends Activity {
 		btnConfermaReg = (Button) findViewById(R.id.btnConfermaReg);
 		
 		// ottengo i dati condivisi attraverso l'uso di Parcelable
-		dc = getIntent().getParcelableExtra("DatiCondivisi");
+		dc = getIntent().getExtras().getParcelable("DatiCondivisi");
 		
 		btnConfermaReg.setOnClickListener(new View.OnClickListener() {
 			
