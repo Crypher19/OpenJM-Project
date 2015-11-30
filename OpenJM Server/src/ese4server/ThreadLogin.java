@@ -16,17 +16,19 @@ public class ThreadLogin extends Thread {
 	private InputStreamReader in;
 	private BufferedReader sIN;	
 	
+	//---------------------MySql o Access?----------------------------------------
 	//Mysqlclass utilizza i database di Msql, DBClass utilizza access.
 	//Rimuovere i commenti per attivare uno/l' altro
-	
-	private MySqlClass db;
-	//Privade DBClass db;
+	//----------------------------------------------------------------------------
+
+	//private MySqlClass db;
+	private DBClass db;
 	
 	public ThreadLogin(Socket conn) {
 		this.connessione = conn;	
 		
-		db = new MySqlClass();
-		//db = new DBClass();
+		//db = new MySqlClass();
+		db = new DBClass();
 		
 		try {
 			// connessioni output del socket
