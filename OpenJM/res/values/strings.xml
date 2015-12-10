@@ -26,5 +26,8 @@
     <string name="campiinvalidi">Uno dei campi &#232; invalido!</string>
     <string name="regsuccessful">Registrazione effettuata correttamente!</string>
     <string name="tornaalmenu">TORNA AL MENU</string>
+    <string name="infoscuola">INFO SCUOLA</string>
+    <string name="infoindirizzi">INFO INDIRIZZI</string>
+    <string name="scanqrcode">SCAN QR-CODE</string>
 
 </resources>
