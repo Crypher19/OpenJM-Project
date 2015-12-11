@@ -1,22 +1,7 @@
 ERRORI GENERALI
 - Pulsante "settings" in alto a destra dell'app inutile (rimuovere)
-- Inserire pulsante per il logout
 - Gli errori devono essere popup invece che stringhe visualizzate sotto i campi
 
-ERRORI PAGINA DI ACCESSO
-- Pulsante "cancella" deve azzerare anche le stringhe di errore
-
 ERRORI PAGINA REGISTRAZIONE
-- Nell'area "registrazione" inserire la possibilit‡ di scorrere in giu (dopo il campo cognome non si vede il campo mail, Ë necessario chiudere la tastiera e selezionare il campo email maunalmente)
-- Pagina "regSuccessful" bottone "torma al menu" non funziona
-- Messaggio "connessione fallita" nella pagina "Registrazione" superfluo (verr‡ notificato nella pagina "regSuccessful")
-- Reset dei messaggi di errore quando si torna alla pagina "Registrazione"
-- Per evitare registrazini simultanee prevedere:
-	1) tasto conferma che si disabilita
-	2) popup (con rotellina che gira) che copre la pagina "Registrazione"
-- Prevedere messaggi pi˘ specifici in caso di errore su pi˘ campi (se sbaglio solo la mail -> "errore la mail non Ë valida"... oppure ... "username troppo corto", non "username errato")
-- Prima lettera dei campi "nome" e "cognome" deve essere impostata automaticamente in uppercase
-- Quando l'utente si registra correttamente appare lo stesso "regSuccesful" con messaggio di errore
-- Scritta "registrazione effettuata correttamente!" nella pagina "Registazione" superflua (verr‡ notificato nella pagina "regSuccessful")
-- Una volta registrato l'utente deve essere reindirizzato alla pagina principale (ora Ë necessario farlo manualmente)
+- Nell'area "registrazione" inserire la possibilit√† di scorrere in giu (dopo il campo cognome non si vede il campo mail, √® necessario chiudere la tastiera e selezionare il campo email maunalmente)
 OPZIONALE: campo conferma password
