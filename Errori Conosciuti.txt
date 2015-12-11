@@ -3,10 +3,5 @@ ERRORI GENERALI
 - Gli errori devono essere popup invece che stringhe visualizzate sotto i campi
 
 ERRORI PAGINA REGISTRAZIONE
-<<<<<<< HEAD
-- Nell'area "registrazione" inserire la possibilità di scorrere in giu (dopo il campo cognome non si vede il campo mail, è necessario chiudere la tastiera e selezionare il campo email maunalmente)
-OPZIONALE: campo conferma password
-=======
 - Nell'area "registrazione" inserire la possibilitÃ  di scorrere in giu (dopo il campo cognome non si vede il campo mail, Ã¨ necessario chiudere la tastiera e selezionare il campo email maunalmente)
 OPZIONALE: campo conferma password
->>>>>>> origin/master
