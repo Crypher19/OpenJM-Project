@@ -36,13 +36,29 @@
             android:label="@string/title_activity_registration" >
         </activity>
         <activity
-            android:name=".RegSuccessful"
-            android:label="@string/title_activity_reg_successful" >
+            android:name=".RegInvalid"
+            android:label="@string/title_activity_reg_invalid" >
         </activity>
         <activity
             android:name="com.dm.zbar.android.scanner.ZBarScannerActivity"
             android:label="@string/app_name"
             android:screenOrientation="landscape" />
+        <activity
+            android:name=".RegSuccess"
+            android:label="@string/title_activity_reg_success" >
+        </activity>
+        <activity
+            android:name=".ViewActivity"
+            android:label="@string/title_activity_view" >
+        </activity>
+        <activity
+            android:name=".InfoScuolaActivity"
+            android:label="@string/title_activity_info_scuola" >
+        </activity>
+        <activity
+            android:name=".InfoIndirizziActivity"
+            android:label="@string/title_activity_info_indirizzi" >
+        </activity>
     </application>
 
 </manifest>

@@ -46,6 +46,9 @@ public class RegistrationActivity extends Activity {
 			@Override
 			public void onClick(View v) {
 				// TODO Auto-generated method stub
+				
+				btnConfermaReg.setEnabled(false);//per evitare registrazioni simultanee dello stesso utente
+				
 				if (!txtUsernameReg.getText().toString().isEmpty() 
 						&& !txtPasswordReg.getText().toString().isEmpty()
 						&& !txtNomeReg.getText().toString().isEmpty()
@@ -75,25 +78,37 @@ public class RegistrationActivity extends Activity {
 						
 					if (dc.isAutenticato()) {
 						dc.setAutenticato(false); // resetto per fare il login
-						lblResultReg.setText(R.string.regsuccessful); // non registrato
+						//lblResultReg.setText(R.string.regsuccessful); // non registrato
+						Intent intent = new Intent(RegistrationActivity.this, RegSuccess.class);
+						Bundle bundle = new Bundle();
+						bundle.putParcelable("DatiCondivisi", dc);
+						intent.putExtras(bundle);
+						// faccio partire la nuova activity
+						startActivity(intent);
+						//btnConfermaReg.setEnabled(true);
 					}
 					else {
-						lblResultReg.setText(R.string.connessionefallita); // non registrato				
+						//lblResultReg.setText(R.string.connessionefallita); // non registrato	
+						Intent intent = new Intent(RegistrationActivity.this, RegInvalid.class);
+						Bundle bundle = new Bundle();
+						bundle.putParcelable("DatiCondivisi", dc);
+						intent.putExtras(bundle);
+						// faccio partire la nuova activity
+						startActivity(intent);
+						//btnConfermaReg.setEnabled(true);
 					}
 					
-					Intent intent = new Intent(RegistrationActivity.this, RegSuccessful.class);
-					Bundle bundle = new Bundle();
-					bundle.putParcelable("DatiCondivisi", dc);
-					intent.putExtras(bundle);
+					
 
-					// faccio partire la nuova activity
-					startActivity(intent);
+					
 				} // fine if input utente vuoto
 				else if (!txtUsernameReg.getText().toString().isEmpty()) {
 					lblResultReg.setText(R.string.inserireUsername);
+					btnConfermaReg.setEnabled(true);
 				}
 				else if (!txtPasswordReg.getText().toString().isEmpty()) {
 					lblResultReg.setText(R.string.inserirePassword);
+					btnConfermaReg.setEnabled(true);
 				}
 			}
 		});

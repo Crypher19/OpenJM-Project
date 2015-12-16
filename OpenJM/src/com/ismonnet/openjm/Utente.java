@@ -92,7 +92,7 @@ public class Utente implements Parcelable {
         dest.writeString(mail);
     }
 
-    @SuppressWarnings("unused")
+    //@SuppressWarnings("unused")
     public static final Parcelable.Creator<Utente> CREATOR = new Parcelable.Creator<Utente>() {
         @Override
         public Utente createFromParcel(Parcel in) {

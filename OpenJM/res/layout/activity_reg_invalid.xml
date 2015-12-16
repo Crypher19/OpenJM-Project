@@ -8,19 +8,19 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.ismonnet.openjm.RegSuccessful" >
+    tools:context="com.ismonnet.openjm.RegInvalid" >
 
     <TextView
-        android:id="@+id/textView1"
+        android:id="@+id/strView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/campiinvalidi"
         android:textAppearance="?android:attr/textAppearanceLarge" />
 
     <Button
-        android:id="@+id/btnTornaAlMenu"
-        android:layout_width="336dp"
+        android:id="@+id/btnTornaAllaRegAct"
+        android:layout_width="249dp"
         android:layout_height="wrap_content"
-        android:text="@string/tornaalmenu" />
+        android:text="@string/riprova" />
 
 </LinearLayout>

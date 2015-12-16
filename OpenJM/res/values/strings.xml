@@ -10,7 +10,7 @@
     <string name="registrati">REGISTRATI</string>
     <string name="cancella">CANCELLA</string>
     <string name="oppure">OPPURE</string>
-    <string name="title_activity_secret">SecretActivity</string>
+    <string name="title_activity_secret">OpenJM</string>
     <string name="benvenuto">Benvenuto!</string>
     <string name="connessioneincorso">Connessione in corso&#8230;</string>
     <string name="connessionefallita">Connessione Fallita</string>
@@ -22,12 +22,20 @@
     <string name="surname">Cognome</string>
     <string name="email">E-Mail</string>
     <string name="conferma">CONFERMA</string>
-    <string name="title_activity_reg_successful">RegSuccessful</string>
+    <string name="title_activity_reg_invalid">OpenJM</string>
     <string name="campiinvalidi">Uno dei campi &#232; invalido!</string>
     <string name="regsuccessful">Registrazione effettuata correttamente!</string>
     <string name="tornaalmenu">TORNA AL MENU</string>
     <string name="infoscuola">INFO SCUOLA</string>
     <string name="infoindirizzi">INFO INDIRIZZI</string>
-    <string name="scanqrcode">SCAN QR-CODE</string>
+    <string name="scanqrcode">SCANNER</string>
+    <string name="logout">LOGOUT</string>
+    <string name="stringempty"></string>
+    <string name="riprova">RIPROVA</string>
+    <string name="title_activity_reg_success">OpenJM</string>
+    <string name="title_activity_view">OpenJM</string>
+    <string name="title_activity_info_scuola">OpenJM</string>
+    <string name="title_activity_info_indirizzi">OpenJM</string>
+    <string name="indietro">INDIETRO</string>
 
 </resources>

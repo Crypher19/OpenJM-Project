@@ -11,7 +11,7 @@
     tools:context="com.ismonnet.openjm.RegistrationActivity" >
 
     <TextView
-        android:id="@+id/textView1"
+        android:id="@+id/strView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/username"
@@ -54,7 +54,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:inputType="textPersonName" />
+        android:inputType="textCapSentences" />
 
     <TextView
         android:id="@+id/textView5"
@@ -68,7 +68,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:inputType="textPersonName" />
+        android:inputType="textCapSentences" />
 
     <TextView
         android:id="@+id/textView3"

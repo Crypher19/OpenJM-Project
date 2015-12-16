@@ -27,7 +27,7 @@ public class MainActivity extends Activity {
 	private Button btnCancella;
 	private Button btnRegistrati;
 	private Intent intentSecretActivity;
-	private Intent intentRegistrationActivity;
+	//private Intent intentRegistrationActivity;
 			
 	private DatiCondivisi dc;
 	
@@ -84,6 +84,7 @@ public class MainActivity extends Activity {
 						lblResult.setText(R.string.benvenuto);
 						
 						// faccio partire la nuova activity
+						intentSecretActivity.putExtra("DatiCondivisi", dc);
 						startActivity(intentSecretActivity);
 					}
 					else {
@@ -108,6 +109,7 @@ public class MainActivity extends Activity {
 				txtUsername.setText("");
 				txtPassword.setText("");
 				txtUsername.requestFocus();
+				lblResult.setText(R.string.stringempty);
 			}
 		});
 		

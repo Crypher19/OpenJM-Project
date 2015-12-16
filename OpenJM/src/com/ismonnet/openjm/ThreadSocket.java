@@ -6,7 +6,7 @@ import java.io.InputStreamReader;
 import java.io.OutputStream;
 import java.io.PrintWriter;
 import java.net.Socket;
-import java.util.StringTokenizer;
+//import java.util.StringTokenizer;
 
 import android.util.Log;
 

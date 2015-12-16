@@ -16,7 +16,7 @@ public class DatiCondivisi implements Parcelable {
 	public DatiCondivisi() {
 		utente = new Utente();
 		serverAddress = "172.22.108.108";
-		serverPort = 3333;
+		serverPort = 4444;
 		autenticato = false;
 	}
 
@@ -83,7 +83,7 @@ public class DatiCondivisi implements Parcelable {
        dest.writeString(scelta);
    }
 
-   @SuppressWarnings("unused")
+   //@SuppressWarnings("unused")
    public static final Parcelable.Creator<DatiCondivisi> CREATOR = new Parcelable.Creator<DatiCondivisi>() {
        @Override
        public DatiCondivisi createFromParcel(Parcel in) {
